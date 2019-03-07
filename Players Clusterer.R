@@ -1,12 +1,12 @@
 #Read CSV File
-playersStats <- read.csv("C:/PokerPredictor/Clustering/clusteringInputForR.csv")
+playersStats <- read.csv("clusteringInputForR.csv")
 
 #Scree Plot
 mydata <- playersStats[,c(2:5)]
 wss <- (nrow(mydata)-1)*sum(apply(mydata,2,var))
 for (i in 2:15) wss[i] <- sum(kmeans(mydata,
                                      centers=i)$withinss)
-plot(1:15, wss, type="b", xlab="Poèet zhlukov",
+plot(1:15, wss, type="b", xlab="PoÃ¨et zhlukov",
      ylab="SSE")
 
 clustersCount = 4
