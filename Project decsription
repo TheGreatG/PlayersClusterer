@@ -1,0 +1,3 @@
+Players Clusterer short description
+
+App splits all players from input file based on players game stats (VPIP, PRF, Cbet, 3bet).
